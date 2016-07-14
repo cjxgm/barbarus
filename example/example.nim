@@ -1,6 +1,6 @@
-import barbarus.barbarus
-import barbarus.translators.english
-import barbarus.translators.chinese
+import "../barbarus"
+import "../barbarus/translators/english"
+import "../barbarus/translators/chinese"
 
 proc test =
     echo ~YES

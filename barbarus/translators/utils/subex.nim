@@ -1,5 +1,5 @@
 import subexes
-import barbarus.translator
+import "../../translator"
 import strutils
 
 type Subex_translator* = ref object of Translator

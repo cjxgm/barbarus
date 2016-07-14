@@ -5,7 +5,7 @@
 ## Manager tries to load translation files, and dispatch it to translator
 
 import parsecfg
-import barbarus.translator
+import "../translator"
 from typetraits as tt import nil
 from os import `/`, add_file_ext
 
@@ -37,7 +37,7 @@ template init_manager*(T: typedesc, dir = default_translation_dir): Manager =
     init_manager(translator, name, path)
 
 when is_main_module:
-    import barbarus.translators.english
+    import "../translators/english"
     var man = init_manager(en_US)
     echo man.translate("GREET", 3, 2)
 
